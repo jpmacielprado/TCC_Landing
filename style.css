@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+  --cor-primaria: #FE6D24;
+  --cor-secundaria: #e65c1a;
+  --cor-terciaria: #D65B1D;
+  --cor-fundo: #F0F0F0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -49,28 +57,28 @@ section {
 
 .navbar a {
   font-family: Inter;
-  color: #FE6D24;
+  color: var(--cor-primaria);
   text-decoration: none;
   font-weight: bold;
 }
 
 .navbar.scrolled {
  border-radius: 50px;
- background-color: #FE6D24;
+ background-color: var(--cor-primaria);
  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .navbar.scrolled a {
-    color: #F0F0F0;
+    color: var(--cor-fundo);
 }
 
 .navbar.scrolled a.active {
-    border-bottom: 2px solid #F0F0F0;
+    border-bottom: 2px solid var(--cor-fundo);
     padding-bottom: 5px;
 }
 
 .navbar a.active {
-    border-bottom: 2px solid #FE6D24;
+    border-bottom: 2px solid var(--cor-primaria);
     padding-bottom: 5px;
 }
 
@@ -95,7 +103,7 @@ section {
     margin-bottom: 20px;
 }
 .home > .welcome h1 {
-    color: #FE6D24;
+    color: var(--cor-primaria);
     font-size: 2rem;
     margin-bottom: -80px;
     margin-left: 50px;
@@ -112,7 +120,7 @@ section {
 }
 
 .home > .link {
-    background-color: #FE6D24;
+    background-color: var(--cor-primaria);
     border-radius: 30px;
     display: flex;
     margin-top: 7dvh;
@@ -124,13 +132,13 @@ section {
   font-weight: bold;
   font-family: Quicksand;
     font-size: 1.5rem;
-    color: #F0F0F0;
+    color: var(--cor-fundo);
     text-decoration: none;
     padding: 10px 30px;
 }
 
 .home > .link:hover {
-    background-color: #e65c1a;
+    background-color: var(--cor-secundaria);
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -152,7 +160,7 @@ section {
 
 .about > .text h2 {
   font-family: Inter;
-  color: #FE6D24;
+  color: var(--cor-primaria);
   font-size: 3rem;
   text-align: center;
   font-weight: 500;
@@ -160,7 +168,7 @@ section {
 
 .about > .text p {
   font-family: Inter;
-  color: #D65B1D;
+  color: var(--cor-terciaria);
   font-size: 1.2rem;
   text-align: justify;
   text-justify: inter-word;
@@ -178,7 +186,7 @@ section {
 
 .steps h2 {
   font-family: Inter;
-  color: #FE6D24;
+  color: var(--cor-primaria);
   font-size: 3rem;
   text-align: center;
   font-weight: 500;
@@ -204,7 +212,7 @@ section {
 }
 
 .blocks > div:hover {
-  background-color: #e65c1a;
+  background-color: var(--cor-secundaria);
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
 }
@@ -226,7 +234,7 @@ section {
 }
 
 .blocks > .block1 {
-  background-color: #FE6D24;
+  background-color: var(--cor-primaria);
   border-radius: 30px;
   width: 17%;
   height: 300px;
@@ -235,7 +243,7 @@ section {
 }
 
 .blocks > .block2 {
-  background-color: #FE6D24;
+  background-color: var(--cor-primaria);
   border-radius: 30px;
   width: 17%;
   height: 300px;
@@ -245,7 +253,7 @@ section {
 }
 
 .blocks > .block3 {
-  background-color: #FE6D24;
+  background-color: var(--cor-primaria);
   border-radius: 30px;
   width: 17%;
   height: 300px;
@@ -254,7 +262,7 @@ section {
 }
 
 .blocks > .block4 {
-  background-color: #FE6D24;
+  background-color: var(--cor-primaria);
   border-radius: 30px;
   width: 17%;
   height: 300px;
@@ -264,7 +272,7 @@ section {
 }
 
 .blocks > .block5 {
-  background-color: #FE6D24;
+  background-color: var(--cor-primaria);
   border-radius: 30px;
   width: 17%;
   height: 300px;
@@ -301,7 +309,7 @@ section {
 }
 
 .done > .topics > .time_line >div{
-  background-color: #FE6D24;
+  background-color: var(--cor-primaria);
   border-radius: 50%;
   width: 90px;
   height: 90px;
@@ -312,7 +320,7 @@ section {
 }
 
 .done > .topics > .time_line > .topic_item{
-  color: #F0F0F0;
+  color: var(--cor-fundo);
   font-family: Inter;
   font-weight: bold;
   display: flex;
@@ -329,7 +337,7 @@ section {
 
 .done > .topics h2 {
   font-family: Inter;
-  color: #FE6D24;
+  color: var(--cor-primaria);
   font-size: 3rem;
   text-align: center;
   font-weight: 500;
@@ -342,7 +350,7 @@ section {
 
 .done > .topics li{
   font-family: Inter;
-  color: #D65B1D;
+  color: var(--cor-terciaria);
   font-size: 1.8rem;
   font-weight: bold;
   text-align: justify;
@@ -352,9 +360,70 @@ section {
 
 .done > .topics p {
   font-family: Inter;
-  color: #D65B1D;
+  color: var(--cor-terciaria);
   font-size: 1.2rem;
   text-align: justify;
   text-justify: inter-word;
   line-height: 1.8;
   }
+
+/* ===== CHALLENGES SECTION ===== */
+
+.challenges{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+  align-items: center;
+}
+
+.challenges > .src_left{
+  margin-top: 20px;
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.challenges > .container{
+  margin-top: 20px;
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.challenges > .container > .text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  padding: 20px;
+}
+
+.challenges > .container > .text h1 {
+  font-family: Inter;
+  color: var(--cor-primaria);
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.challenges > .container > .text p {
+  font-family: Inter;
+  color: var(--cor-terciaria);
+  font-size: 1.2rem;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.8;
+  }
+
+.challenges > .container > .src_right{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 50%;
+}
