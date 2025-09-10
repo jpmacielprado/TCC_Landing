@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Landing presentation</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#steps">Passos</a></li>
+        <li><a href="#done">O que temos</a></li>
+        <li><a href="#challenges">Desafios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home" id="home">
+      <div class="welcome">
+        <h1>Bem-vindos! Somos a</h1>
+        <img src="./src/logo.svg" alt="IKomnercy logo" />
+      </div>
+      <div class="src">
+        <iframe src="https://www.youtube.com/embed/m4jW8BioAz0" title="Apresentação em vídeo" frameborder="0"
+          width="700" height="415"></iframe>
+      </div>
+      <div class="link">
+        <a href="#about">Saiba mais</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="text">
+        <h2>Nosso Projeto:</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="src"><img src="./src/phone.svg" alt="Dropshipping app example" width="600"></div>
+    </section>
+
+    <section class="steps" id="steps">
+      <h2>Etapas:</h2>
+      <div class="blocks">
+        <div class="block1">
+          <h3>Planejamento</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="block2">
+          <h3>Prototipagem</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="block3">
+          <h3>Desenvolvimento</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="block4">
+          <h3>Testes</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="block5">
+          <h3>Efetivação</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="done" id="done">
+      <div class="src">
+        <img src="./src/check.svg" alt="Dropshipping app example" width="600">
+      </div>
+
+      <container class="topics">
+        <div class="time_line">
+          <div class="topic_item">
+            <h3>1</h3>
+          </div>
+          <div class="topic_item">
+            <h3>2</h3>
+          </div>
+          <div class="topic_item">
+            <h3>3</h3>
+          </div>
+          <div class="topic_item">
+            <h3>4</h3>
+          </div>
+          <div class="topic_item">
+            <h3>5</h3>
+          </div>
+        </div>
+
+        <div class="text">
+          <h2>Finalizado:</h2>
+          <ul>
+            <li>Funcionalidade 1</li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <li>Funcionalidade 2</li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <li>Funcionalidade 3</li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <li>Funcionalidade 4</li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <li>Funcionalidade 5</li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </ul>
+        </div>
+      </container>
+    </section>
+
+    <section id="challenges">
+      <h2>Desafios</h2>
+      <p>Texto sobre desafios...</p>
+    </section>
+  </main>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".navbar a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 100; // margem para o header fixo
+        const sectionHeight = section.offsetHeight;
+
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("active");
+        }
+      });
+    });
+
+    const nav = document.querySelector(".navbar");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 65 && window.innerWidth > 768) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    });
+
+  </script>
+
+</body>
+
+</html>
