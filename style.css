@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Della+Respira&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Della+Respira&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
 
 :root {
-  --cor-primaria: #FE6D24;
+  --cor-primaria: #fe6d24;
   --cor-secundaria: #e65c1a;
-  --cor-terciaria: #D65B1D;
-  --cor-fundo: #F0F0F0;
+  --cor-terciaria: #d65b1d;
+  --cor-fundo: #f0f0f0;
 }
 
 * {
@@ -21,14 +21,13 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  background: #F0F0F0;
+  background: #f0f0f0;
 }
 
 section {
-  min-height: 100vh; /* cada seção ocupa a tela inteira */
-  padding: 80px 20px; /* evita que o conteúdo encoste no topo */
+  min-height: 100vh;
+  padding: 80px 20px;
 }
-
 
 /* ===== HEADER ===== */
 .header {
@@ -44,9 +43,9 @@ section {
 }
 
 .navbar {
-    border-radius: 50px;
-    background: transparent;
-    transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 50px;
+  background: transparent;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 .navbar ul {
   padding: 20px 40px;
@@ -63,23 +62,23 @@ section {
 }
 
 .navbar.scrolled {
- border-radius: 50px;
- background-color: var(--cor-primaria);
- box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  border-radius: 50px;
+  background-color: var(--cor-primaria);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .navbar.scrolled a {
-    color: var(--cor-fundo);
+  color: var(--cor-fundo);
 }
 
 .navbar.scrolled a.active {
-    border-bottom: 2px solid var(--cor-fundo);
-    padding-bottom: 5px;
+  border-bottom: 2px solid var(--cor-fundo);
+  padding-bottom: 5px;
 }
 
 .navbar a.active {
-    border-bottom: 2px solid var(--cor-primaria);
-    padding-bottom: 5px;
+  border-bottom: 2px solid var(--cor-primaria);
+  padding-bottom: 5px;
 }
 
 /* ===== HOME SECTION ===== */
@@ -95,18 +94,18 @@ section {
 }
 
 .home > .welcome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 .home > .welcome h1 {
-    color: var(--cor-primaria);
-    font-size: 2rem;
-    margin-bottom: -80px;
-    margin-left: 50px;
+  color: var(--cor-primaria);
+  font-size: 2rem;
+  margin-bottom: -80px;
+  margin-left: 50px;
 }
 
 .home > .welcome img {
@@ -114,41 +113,40 @@ section {
 }
 
 .home > .src {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2dvh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2dvh;
 }
 
 .home > .link {
-    background-color: var(--cor-primaria);
-    border-radius: 30px;
-    display: flex;
-    margin-top: 7dvh;
-    transition: 0.3s ease;
-
+  background-color: var(--cor-primaria);
+  border-radius: 30px;
+  display: flex;
+  margin-top: 7dvh;
+  transition: 0.3s ease;
 }
 
 .home > .link a {
   font-weight: bold;
   font-family: Quicksand;
-    font-size: 1.5rem;
-    color: var(--cor-fundo);
-    text-decoration: none;
-    padding: 10px 30px;
+  font-size: 1.5rem;
+  color: var(--cor-fundo);
+  text-decoration: none;
+  padding: 10px 30px;
 }
 
 .home > .link:hover {
-    background-color: var(--cor-secundaria);
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  background-color: var(--cor-secundaria);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* ===== ABOUT SECTION ===== */
 
-.about{
+.about {
   display: flex;
   flex-direction: row;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
   gap: 50px;
 }
@@ -164,7 +162,7 @@ section {
   font-size: 3rem;
   text-align: center;
   font-weight: 500;
-  }
+}
 
 .about > .text p {
   font-family: Inter;
@@ -173,9 +171,9 @@ section {
   text-align: justify;
   text-justify: inter-word;
   line-height: 1.8;
-  }
+}
 
-  /* ===== STEPS SECTION ===== */
+/* ===== STEPS SECTION ===== */
 
 .steps {
   display: flex;
@@ -193,7 +191,7 @@ section {
   margin-bottom: 20px;
 }
 
-.blocks{
+.blocks {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -230,7 +228,7 @@ section {
   margin: 20px;
   text-align: justify;
   text-justify: inter-word;
-  line-height: 1.5; 
+  line-height: 1.5;
 }
 
 .blocks > .block1 {
@@ -239,7 +237,7 @@ section {
   width: 17%;
   height: 300px;
   text-align: center;
-  color: #F0F0F0;
+  color: #f0f0f0;
 }
 
 .blocks > .block2 {
@@ -248,7 +246,7 @@ section {
   width: 17%;
   height: 300px;
   text-align: center;
-  color: #F0F0F0;
+  color: #f0f0f0;
   margin-top: auto;
 }
 
@@ -258,7 +256,7 @@ section {
   width: 17%;
   height: 300px;
   text-align: center;
-  color: #F0F0F0;
+  color: #f0f0f0;
 }
 
 .blocks > .block4 {
@@ -267,7 +265,7 @@ section {
   width: 17%;
   height: 300px;
   text-align: center;
-  color: #F0F0F0;
+  color: #f0f0f0;
   margin-top: auto;
 }
 
@@ -277,16 +275,15 @@ section {
   width: 17%;
   height: 300px;
   text-align: center;
-  color: #F0F0F0;
+  color: #f0f0f0;
 }
 
 /* ===== DONE SECTION ===== */
 
-
-.done{
+.done {
   display: flex;
   flex-direction: row;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
   gap: 80px;
 }
@@ -299,7 +296,7 @@ section {
   height: fit-content;
 }
 
-.done > .topics > .time_line{
+.done > .topics > .time_line {
   display: flex;
   flex-direction: column;
   height: 62dvh;
@@ -308,7 +305,7 @@ section {
   align-items: center;
 }
 
-.done > .topics > .time_line >div{
+.done > .topics > .time_line > div {
   background-color: var(--cor-primaria);
   border-radius: 50%;
   width: 90px;
@@ -319,7 +316,7 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
-.done > .topics > .time_line > .topic_item{
+.done > .topics > .time_line > .topic_item {
   color: var(--cor-fundo);
   font-family: Inter;
   font-weight: bold;
@@ -342,41 +339,43 @@ section {
   text-align: center;
   font-weight: 500;
   margin-bottom: 20px;
-  }
-
-  .done > .topics ul {
-    list-style-type: none;
-  }
-
-.done > .topics li{
-  font-family: Inter;
-  color: var(--cor-terciaria);
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-align: justify;
-  text-justify: inter-word;
-  line-height: 1.8;
 }
 
-.done > .topics p {
+.done > .topics ul {
+  list-style-type: none; /* remove os marcadores padrão */
+  padding-left: 0;
+}
+
+.done > .topics li {
+  margin-bottom: 20px; /* espaço entre os itens */
+}
+
+.done > .topics li h4 {
+  font-family: Inter;
+  color: var(--cor-primaria);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.done > .topics li p {
   font-family: Inter;
   color: var(--cor-terciaria);
   font-size: 1.2rem;
-  text-align: justify;
-  text-justify: inter-word;
-  line-height: 1.8;
-  }
+  line-height: 1.6;
+  margin: 0;
+}
 
 /* ===== CHALLENGES SECTION ===== */
 
-.challenges{
+.challenges {
   display: flex;
   flex-direction: row;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
 }
 
-.challenges > .src_left{
+.challenges > .src_left {
   margin-top: 20px;
   width: 50%;
   height: fit-content;
@@ -385,7 +384,7 @@ section {
   justify-content: center;
 }
 
-.challenges > .container{
+.challenges > .container {
   margin-top: 20px;
   width: 50%;
   height: fit-content;
@@ -394,7 +393,7 @@ section {
   gap: 30px;
 }
 
-.challenges > .container > .text{
+.challenges > .container > .text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -419,9 +418,9 @@ section {
   text-align: justify;
   text-justify: inter-word;
   line-height: 1.8;
-  }
+}
 
-.challenges > .container > .src_right{
+.challenges > .container > .src_right {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
