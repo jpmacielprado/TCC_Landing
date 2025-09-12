@@ -62,13 +62,16 @@ section {
 }
 
 .navbar.scrolled {
-  border-radius: 50px;
-  background-color: var(--cor-primaria);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  border-radius: 50px; /* bordas arredondadas */
+  background: rgba(254, 109, 36, 0.7); /* laranja com transparência */
+  backdrop-filter: blur(10px); /* efeito vidro */
+  -webkit-backdrop-filter: blur(10px); /* Safari */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* sombra suave */
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }
 
 .navbar.scrolled a {
-  color: var(--cor-fundo);
+  color: var(--cor-fundo); /* textos ficam claros */
 }
 
 .navbar.scrolled a.active {
